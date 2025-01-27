@@ -1,0 +1,57 @@
+{
+    "root": true,
+    "extends": [
+      "@react-native",
+      "plugin:import/recommended",
+      "plugin:import/typescript",
+      "plugin:react/recommended"
+    ],
+    "plugins": ["import", "react", "@typescript-eslint", "react-hooks"],
+    "env": {
+      "react-native/react-native": true
+    },
+    "rules": {
+      "no-console": "error",
+      "@typescript-eslint/prop-types": "off",
+      "no-unused-expressions": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "import/no-unresolved": "error",
+      "object-curly-spacing": ["error", "always"]
+    },
+    "overrides": [
+      {
+        "files": [".ts", ".tsx", ".js", ".jsx"],
+        "rules": {
+          "@typescript-eslint/no-unused-vars": ["error"],
+          "@typescript-eslint/prop-types": "off"
+        }
+      }
+    ],
+    "settings": {
+      "import/parsers": {
+        "@typescript-eslint/parser": [
+          ".ts",
+          ".tsx",
+          ".js",
+          ".jsx",
+          ".json"
+        ]
+      },
+      "import/resolver": {
+        "typescript": {},
+        "node": {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ],
+          "moduleDirectory": [
+            "node_modules",
+            "src/"
+          ]
+        }
+      }
+    }
+  }
+  

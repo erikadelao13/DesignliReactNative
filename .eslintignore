@@ -1,0 +1,6 @@
+/android/*
+/ios/*
+/src/assets/*
+/node_modules/*
+*/.snap
+*/.d.ts

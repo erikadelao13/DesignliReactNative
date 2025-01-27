@@ -3,9 +3,13 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@app/*": ["./src/app/*"],
+      "@screens": ["./src/screens"],
+      "@components": ["./src/components"],
+      "@hooks": ["./src/hooks"],
+      "@utils": ["./src/utils"],
+      "@context": ["./src/context"],
+      "@designSystem": ["./src/designSystem"],
     }
   },
   "include": [
