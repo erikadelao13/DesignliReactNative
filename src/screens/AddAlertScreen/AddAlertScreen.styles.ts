@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors } from '@designSystem';
+import { colors, spaces } from '@designSystem';
 
 export const styles = StyleSheet.create({
   container: {
@@ -16,7 +16,11 @@ export const styles = StyleSheet.create({
   input: {
     borderColor: '#ccc',
     borderWidth: 1,
-    padding: 8,
-    marginVertical: 8,
+    padding: spaces.xs,
+    marginVertical: spaces.xs,
+  },
+  customValue: {
+    marginTop: spaces.xs,
+    marginBottom: 10,
   },
 });
