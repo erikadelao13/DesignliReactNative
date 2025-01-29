@@ -54,7 +54,7 @@ export const AddAlertScreen = () => {
         <Text style={styles.title}>Add a Stock/Crypto Alert</Text>
         {/*IMPORTANT: I'm hardcoding the values on the dropdown, because with the symbols endpoint I'm not receiving any stream data, just with these 2 */}
         {/*It was a known issue on github: https://github.com/finnhubio/Finnhub-API/issues/65 */}
-        {/*If you desire to test another token, I left an optional input component*/}
+        {/*If you desire to test another symbol, I left an optional input component*/}
         <Dropdown
           data={[
             { id: '1', label: 'BINANCE:BTCUSDT' },
